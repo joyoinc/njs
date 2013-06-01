@@ -1,6 +1,23 @@
+menu1 = "Home"
+menu2 = ["Service" , "iPhone App" , "Mobile App" , "Web App" ]
+menu3 = "Solution"
+menu4 = "Support"
+menu5 = "Contact Us"
+
 div.navbar
   div.navbar-inner
-    ul.nav
-      li: a(href="/") Home
-      li: a(href="/blog/new") New Post
-      li: a(href="#") New Link
+    div.container
+      div.nav-collapse.collapse.navbar-responsive-collapse
+        ul.nav
+          li: a(href="/")= menu1 
+          li.dropdown
+            a.dropdown-toggle(href="#", data-toggle="dropdown")= menu2[0]
+              b.caret
+            ul.dropdown-menu
+              li: a(href="/service/iphone")= menu2[1]
+              li: a(href="/service/mobile")= menu2[2]
+              li.divider
+              li: a(href="/service/web")= menu2[3]
+          li: a(href="/solution")= menu3
+          li: a(href="/support")= menu4
+          li: a(href="/contact")= menu5

@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  ul.thumbnails
+    li.span3
+      a.thumbnail
+        img(src="/img/apple_logo.jpg", style="height:135px;")
+    li.span3
+      a.thumbnail
+        img(src="/img/android_logo.jpg", style="height:135px;")
+    li.span3
+      a.thumbnail
+        img(src="/img/blackberry_logo.jpg", style="height:135px;")
+    li.span3
+      a.thumbnail
+        img(src="/img/windows_mobile.jpg", style="height:135px;")
+  h3.text-info= pageContent.headline
+  each pa in pageContent.paragraphs
+    p.small.text-justify= pa
+
