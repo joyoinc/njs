@@ -2,15 +2,19 @@ exports.labels = {
 };
 
 exports.pageIndex = {
-  pageTitle: 'JoYo Inc.',
-  headline: 'About Us',
+  pageTitle: '清新博远智能信息科技有限公司',
+  line0: '一流的专业软件外包企业。专业的软件开发人才，高品质的服务态度。',
+  line1: '行胜于言，清华人永远的承诺！',
+  headline: '关于我们',
   paragraphs: [
-    "A-1 Technology is a leading edge technology and Software Development Company focused on delivering the best and most cost-effective services and solutions to its clients globally. We have an impeccable experience as far as custom mobile application software development is concerned and our diversified expertise in developing mobile applications across various platforms like Blackberry, iPhone, Android, Windows Mobile platform, J2ME, BREW and Palm has been proven time and again.",
-    "A-1 Technology has been developing customized Information Technology solutions for clients ranging from large enterprises to businesses in order to make them more competitive and productive. Head quartered in New York, our other US based locations include Los Angeles, Irvine, San Francisco and Boca Raton.",
-    "A-1 Technology has a long proven track in developing and customizing mobile applications for the clients in different verticals such as Retail , Entertainment, Gaming, Healthcare, Insurance, Banking, to name a few. Ingenuity is the root factor that make anyone rise and provide an edge over others in the ultra competitive technology market. We understand this notion, which is why our project management procedures ensures detailed analysis of the project scope and requirements laid, suggesting the best techniques and thus, the successful execution of the Mobile Application!",
-    "We have also been a pioneer in providing web development services that best suit the requirements of the client. A-1 technology has developed state-of-the-art corporate websites, e-Commerce solutions, web-based applications, CMS, etc. Our web solutions serve wide array of industries including Government, Entertainment, Health, Education, Travel, Publishing, etc. Over the years, we have been able to nurture high level of expertise which has led to extensive experience and ability to provide state-of-the-art business solutions. This has in turn helped our clients by cutting their revenue costs and expanding their horizon.",
-    "Our project co-coordinators with their domain expertise work closely with the clients to understand their targeted market and requirements, which results in optimal and effective solution. We can define high-performance architecture at any scale and develop a customized solution for our client. In depth project management skills and experience allows us to manage the whole process and deliver an on- time business solution, which is high on quality and low on budget.",
-    "A-1 Technology is committed to sustaining the highest quality standards through continuous process improvement. It takes pride in the fact that best practice processes in the software development industry has given it a most definite edge with new and returning customers. A-1 promises a compelling experience that will generate new and greater revenue opportunities, increasing customer loyalty and competitive advantages for any organization."
+    "清新博远智能信息科技有限公司(Qingxinboyuan Technology CO. LTD.)是一家专业致力于软件外包，系统集成，软件开发设计的高科技企业。",
+    "公司以技术服务为核心业务，以独特灵活的业务流程设计为主导，深入各项行业为核心的研发模式，完美契合企业需求，有效的帮助企业明确需求，高效率、高质量、低成本的开发和维护软件系统。",
+    "清新博远凝聚着一批清华的高科技人才。公司创始人王超毕业于清华大学，曾于美国进修，并在美国获得国际最先进流程管理体系6sigma最高级别--黑带认证。其领衔的流程主导的软件开发体系，立足于解决流程中最核心的业务逻辑，可以有效引导企业明确其核心需求，以最合理的价格，开发出最贴心的产品节约。此外，公司其他开发人员均毕业于清华大学，拥有十几年软件架构，开发，以及系统集成的丰富经验。",
+    "清新博远本着“锐意创新、精益求精”的开发思想，遵循社会效益与经济效益并重的企业原则，在发展中一直采取“以市场为导向、以客户为中心”的柔性开发模式，并在与客户的至诚合作过程中逐渐形成了一套集研发、销售、服务于一体的高效运行机制。自开始从事软件外包业务以来，服务合作模式从人力资源外包发展到项目外包、离岸开发和OEM产品合作等模式。业务领域延伸到电信业，金融业，制造业等诸多领域。并致力于同客户建立长期的软件外包合作关系，同时立足国内市场，不断拓展欧美市场。",
+    "2011年，清新博远于美国VIVA transcription 达成合作协议，开发并维护其几百万用户的病例管理系统。2012年，公司相继与美国Wells Fargo（富国银行），Detica，Aedi Med ， JOYO Tech等公司进行合作，对其工作流程进行了深入的分析，并帮助其改进流程，完善或重建其智能化办公云平台。",
+    "公司始终将坚持以优质的产品、完善的服务以及良好的信誉与海内外各界朋友合作并求共同发展。",
+    "一流的资源和经验积累、一流的管理、一流的技术和专业的服务是我们能够针对不同客户的需求提供用户满意的产品和服务的根本保障，同时这是清新博远快速发展的根源。",
+    "我们相信，通过提供专业的,高质量的软件外包服务,不断提高服务能力和服务水平, 我们会成为您最为信赖的合作伙伴。"
   ]
 };
 

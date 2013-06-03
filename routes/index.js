@@ -6,8 +6,7 @@ var lang = require('../lang')
 
 exports.index = function(req, res){
   res.render('index', { title: lang.pageIndex.pageTitle,
-    headline: lang.pageIndex.headline,
-    paragraphs: lang.pageIndex.paragraphs
+    pageContent: lang.pageIndex
   });
 };
 
