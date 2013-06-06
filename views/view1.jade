@@ -1,0 +1,6 @@
+extends layout
+
+block content
+  h3.text-info= pageContent.headline
+  each pa in pageContent.paragraphs
+    p.small.text-justify= pa

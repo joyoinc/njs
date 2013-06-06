@@ -1,6 +1,16 @@
 extends layout
 
 block content
+  div.btn-group
+    button.btn.locale(locale='ch') 中文
+    button.btn.locale(locale='en') English
+  script
+    $('.locale').click(function(){
+      $.post('/', {locale: $(this).attr('locale')}, function(){
+        document.location.reload()
+      })
+    })
+
   h4.muted= pageContent.line0
   h3.text-info= pageContent.headline
   each pa in pageContent.paragraphs

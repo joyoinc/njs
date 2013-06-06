@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  div.container-fluid
+    div.row-fluid
+      div.class.span4
+        h3.text-info= pageContent.label1
+        ul.unstyled
+          each job,i in pageContent.jobs
+            li: a(href="/career/#{i}")= job.title
+        h4.text-warning= pageContent.label4
+        small admin@joyoedu.net
+      div.class.span8
+        h3.text-info= pageContent.jobs[jobId].title
+        strong= pageContent.label2
+        ol
+          each line in pageContent.jobs[jobId].descriptions
+            li= line
+        strong= pageContent.label3
+        ol
+          each line in pageContent.jobs[jobId].requirements
+            li= line
+
