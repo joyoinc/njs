@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  div.container
+    h1.muted= title
+    include navbar
+    div.row
+      div.span12
+        //img.img-rounded(data-src="holder.js/940x300")
+        img.img-rounded(src="/img/joyo-home.jpg")
+    h3.text-info= headline
+    form.form-horizontal.offset3
+      div.control-group
+        label.control-label(for='inputName')= labels.yourName
+        div.controls
+          input#inputName(type='text', placeholder='#{labels.yourName}')
+      div.control-group
+        label.control-label(for='inputPhone')= labels.yourPhone
+        div.controls
+          input#inputPhone(type='text', placeholder='#{labels.yourPhone}')
+      div.control-group
+        label.control-label(for='inputEmail')= labels.yourEmail
+        div.controls
+          input#inputEmail(type='text', placeholder='#{labels.yourEmail}')
+      div.control-group
+        div.controls
+          button.btn(type='submit')= labels.contactMe
+    h3.text-info= labels.ourContactInfo
+    ul.thumbnails
+      each site in sites
+        li.span4
+          div.thumbnail
+            h4= site.city
+            p= site.street
+            p= site.cityStateZip
+            p= site.phone

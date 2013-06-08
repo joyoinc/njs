@@ -1,6 +1,13 @@
 extends layout
 
 block content
-  h3.text-info= pageContent.headline
-  each pa in pageContent.paragraphs
-    p.small.text-justify= pa
+  div.container
+    h1.muted= title
+    include navbar
+    div.row
+      div.span12
+        //img.img-rounded(data-src="holder.js/940x300")
+        img.img-rounded(src="/img/joyo-home.jpg")
+
+    paragraph = {headline:pageContent.headline, lines:pageContent.paragraphs}
+    include paragraph

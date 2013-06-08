@@ -51,7 +51,7 @@ exports.career = function(req, res){
 
 exports.contact = function(req, res){
   checkLocale(req);
-  res.render('contact', { title: lang.pageContact.pageTitle,
+  res.render('view3', { title: lang.pageContact.pageTitle,
     navMenus : lang.navMenus,
     headline: lang.pageContact.headline,
     sites: lang.pageContact.sites,
@@ -67,15 +67,15 @@ exports.product = function(req, res){
       pageVar = lang.pageService.iphone;
       break;
     case "mobile":
-      pageView = 'service-other';
+      pageView = 'view1';
       pageVar = lang.pageService.mobile;
       break;
     case "web":
-      pageView = 'service-other';
+      pageView = 'view1';
       pageVar = lang.pageService.web;
       break;
     default:
-      pageView = 'service-other';
+      pageView = 'view1';
       pageVar = lang.pageService.web;
   }
   checkLocale(req);
@@ -93,15 +93,15 @@ exports.service = function(req, res){
       pageVar = lang.pageService.iphone;
       break;
     case "mobile":
-      pageView = 'service-other';
+      pageView = 'view1';
       pageVar = lang.pageService.mobile;
       break;
     case "web":
-      pageView = 'service-other';
+      pageView = 'view1';
       pageVar = lang.pageService.web;
       break;
     default:
-      pageView = 'service-other';
+      pageView = 'view1';
       pageVar = lang.pageService.web;
   }
   checkLocale(req);
