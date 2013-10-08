@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  #items
+    each item, i in items
+      div.row
+        div.span1= i+1
+        div.span7 
+          a(href="/blog/"+item._id)!= item.title
+        div.span4= item.created_at

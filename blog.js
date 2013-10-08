@@ -1,5 +1,6 @@
 var express = require('express');
 var ArticleProvider = require('./articleprovider-mongodb').ArticleProvider;
+var UserAdmin = require('./user-mongodb').UserAdmin;
 //var ArticleProvider = require('./articleprovider-memory').ArticleProvider;
 
 var app = express();
@@ -24,6 +25,7 @@ app.configure('production', function(){
 });
 
 var articleProvider= new ArticleProvider('localhost',27017);
+var userAdmin= new UserAdmin('localhost',27017);
 //var articleProvider= new ArticleProvider();
 
 app.get('/', function(req, res){
@@ -32,6 +34,22 @@ app.get('/', function(req, res){
       title: 'Blog Home',
       articles:docs
     });
+  });
+});
+
+app.get('/user/new', function(req, res) {
+  res.render('user_new.jade', {
+    title: 'New a user'
+  });
+});
+
+app.post('/user/new', function(req, res){
+  userAdmin.addUsers({
+    account: req.param('account'),
+    email: req.param('email'),
+    passwd: '123456'
+  }, function( error, docs) {
+    res.redirect('/')
   });
 });
 
