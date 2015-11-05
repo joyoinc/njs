@@ -2,7 +2,6 @@ extends layout
 
 block content
   div.container
-    h1.muted= title
     include navbar
     
     p.small.text-justify= pageContent.line0
@@ -16,7 +15,8 @@ block content
     p.small.text-justify= pageContent.line2
     div.row
       div.span12
-        img.img-rounded(data-src="holder.js/440x300")
+        //img.img-rounded(data-src="holder.js/440x300")
+        img.img-rounded(src="/img/wechatsale.jpg")
 
     h3.text-info= pageContent.item1
     ul

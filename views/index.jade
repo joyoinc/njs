@@ -2,15 +2,14 @@ extends layout
 
 block content
   div.container
-    h1.muted= title
     include navbar
     div.row
       div.span12
         //img.img-rounded(data-src="holder.js/940x300")
         img.img-rounded(src="/img/superint-home.jpg")
-    div.btn-group
-      button.btn.locale(locale='ch') 中文
-      button.btn.locale(locale='en') English
+    //div.btn-group
+    //  button.btn.locale(locale='ch') 中文
+    //  button.btn.locale(locale='en') English
     script
       $('.locale').click(function(){
       $.post('/', {locale: $(this).attr('locale')}, function(){
@@ -21,55 +20,59 @@ block content
     h3.text-info= pageContent.line0
     ul.thumbnails(style="margin-top:10px;")
       li.span3
-        a.thumbnail
+        a.thumbnail(href='/service/customize')
           img(src="/img/business-0.jpg", style="height:135px;")
         div.thumbnail(style="height: 150px;")
-          h4.text-info= pageContent.business[0].title
+          a(href='/service/customize')
+            h4.text-info= pageContent.business[0].title
           p= pageContent.business[0].desc
       li.span3
-        a.thumbnail
+        a.thumbnail(href='/service/sitebuild')
           img(src="/img/business-1.jpg", style="height:135px;")
         div.thumbnail(style="height: 150px;")
-          h4.text-info= pageContent.business[1].title
+          a(href='/service/sitebuild')
+            h4.text-info= pageContent.business[1].title
           p= pageContent.business[1].desc
       li.span3
-        a.thumbnail
+        a.thumbnail(href='/service/appdev')
           img(src="/img/business-2.jpg", style="height:135px;")
         div.thumbnail(style="height: 150px;")
-          h4.text-info= pageContent.business[2].title
+          a.href('/service/appdev')
+            h4.text-info= pageContent.business[2].title
           p= pageContent.business[2].desc
       li.span3
-        a.thumbnail
+        a.thumbnail(href='/service/wechatsale')
           img(src="/img/business-3.jpg", style="height:135px;")
         div.thumbnail(style="height: 150px;")
-          h4.text-info= pageContent.business[3].title
+          a(href='/service/wechatsale')
+            h4.text-info= pageContent.business[3].title
           p= pageContent.business[3].desc
           
     h3.text-info= pageContent.line1
     ul.thumbnails(style="margin-top:10px;")
       li.span3
-        a.thumbnail
+        a.thumbnail(href='/product/ecom')
           img(src="/img/hotcustom-0.jpg", style="height:135px;")
         div.thumbnail(style="height: 50px;")
-          h4.text-info= pageContent.hotcustom[0].title
+          a(href='/product/ecom'): h4.text-info= pageContent.hotcustom[0].title
           
       li.span3
-        a.thumbnail
+        a.thumbnail(href='/product/eedu')
           img(src="/img/hotcustom-1.jpg", style="height:135px;")
         div.thumbnail(style="height: 50px;")
-          h4.text-info= pageContent.hotcustom[1].title
+          a(href='/product/eedu'): h4.text-info= pageContent.hotcustom[1].title
           
       li.span3
-        a.thumbnail
+        a.thumbnail(href='/product/oa')
           img(src="/img/hotcustom-2.jpg", style="height:135px;")
         div.thumbnail(style="height: 50px;")
-          h4.text-info= pageContent.hotcustom[2].title
+          a(href='/product/oa'): h4.text-info= pageContent.hotcustom[2].title
 
       li.span3
-        a.thumbnail
+        a.thumbnail(href='/product/crm')
           img(src="/img/hotcustom-3.jpg", style="height:135px;")
         div.thumbnail(style="height: 50px;")
-          h4.text-info= pageContent.hotcustom[3].title
+          a(href='/product/crm'): h4.text-info= pageContent.hotcustom[3].title
           
          
     h3.text-info= pageContent.line2

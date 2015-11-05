@@ -11,6 +11,10 @@ html
       script(type='text/javascript', src='/javascripts/holder.js')
   body
     #wrap
+      div.container
+        div.span2
+            img.img-rounded(src="/img/logo.png", style='height:60px;')
+        h1.muted= title
       block content
       #push
     block footer

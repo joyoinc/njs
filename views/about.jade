@@ -2,7 +2,6 @@ extends layout
 
 block content
   div.container
-    h1.muted= title
     include navbar
     div.row
       div.span12
@@ -11,11 +10,11 @@ block content
     h3.text-info= pageContent.line0
     h4.muted= pageContent.line1
         
-    h3.text-info= pageContent.paragraph1.title
+    h4.text-info= pageContent.paragraph1.title
     each line in pageContent.paragraph1.lines
         p= line
         
-    h3.text-info= pageContent.paragraph2.title
+    h4.text-info= pageContent.paragraph2.title
     each line in pageContent.paragraph2.lines
         p= line  
     

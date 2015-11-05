@@ -2,7 +2,6 @@ extends layout
 
 block content
   div.container
-    h1.muted= title
     include navbar
     
     p.small.text-justify= pageContent.lines[0]
@@ -17,6 +16,6 @@ block content
     h4= pageContent.lines[6]
     p.small.text-justify= pageContent.lines[7]
     
-    h3= pageContent.lines[8]
+    h3.text-info= pageContent.lines[8]
     p.small.text-justify= pageContent.lines[9]
     

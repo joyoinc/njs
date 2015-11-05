@@ -132,8 +132,8 @@ exports.pageProduct = {
         ]
     },
     oa: {
-        pageTitle: 'CRM',  
-        headline: 'CRM',
+        pageTitle: '协同办公系统',  
+        headline: '协同办公系统',
         lines : [   '超智略深入了解客户需求，针对每家用户开发一套以人为中心，围绕着人找人、人找事、人找资源的应用设计理念而开发的简洁、易用、实用的综合性、开放性、平台型的协同管理系统。降低信息化落实难度，提高企业工作效率。',
                     '整个系统遵循着科学的协同概念“一个中心、两个基本点、三条纽带、四个管理目标”即以人为中心；以事件、资源为基本点；以沟通、协作、共享为纽带；以诉求、参与人、过程、结果为管理目标；处理人与人、人与事件、人与资源之间的关系。',
                     '目前为止，大多企业客户采取以下架构设计，保证系统跨平台、跨数据库使用。' ],
@@ -192,8 +192,8 @@ exports.pageService = {
 };
 
 exports.pageContact = {
-  pageTitle: 'Contact Us',
-  headline: 'Contact Us',
+  pageTitle: '联系我们',
+  headline: '联系我们',
   labels: {
     yourName: 'Your Name',
     yourPhone: 'Your Phone',
