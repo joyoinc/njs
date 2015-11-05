@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  div.container
+    h1.muted= title
+    include navbar
+    
+    p.small.text-justify= pageContent.line0
+    
+    h3.text-info= pageContent.item0
+    ul
+        each item in pageContent.items0
+            li= item
+            
+    h3.text-info= pageContent.line1
+    p.small.text-justify= pageContent.line2
+    div.row
+      div.span12
+        img.img-rounded(data-src="holder.js/440x300")
+
+    h3.text-info= pageContent.item1
+    ul
+        each item in pageContent.items1
+            li= item
+

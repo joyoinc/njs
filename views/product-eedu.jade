@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  div.container
+    h1.muted= title
+    include navbar
+    
+    p.small.text-justify= pageContent.lines[0]
+    p.small.text-justify= pageContent.lines[1]
+    
+    h4= pageContent.lines[2]
+    p.small.text-justify= pageContent.lines[3]
+    
+    h4= pageContent.lines[4]
+    p.small.text-justify= pageContent.lines[5]
+    
+    h4= pageContent.lines[6]
+    p.small.text-justify= pageContent.lines[7]
+    
+    h4= pageContent.lines[8]
+    p.small.text-justify= pageContent.lines[9]
+    

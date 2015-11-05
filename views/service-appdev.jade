@@ -11,3 +11,7 @@ block content
 
     paragraph = {headline:pageContent.headline, lines:pageContent.paragraphs}
     include paragraph
+
+    h3.text-info= pageContent.dev0
+    each dev in pageContent.devs
+        li= dev

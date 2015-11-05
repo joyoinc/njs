@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  div.container
+    h1.muted= title
+    include navbar
+    
+    p.small.text-justify= pageContent.lines[0]
+    
+    p.small.text-justify= pageContent.lines[1]
+    
+    p.small.text-justify= pageContent.lines[2]
+    
+    div.row
+      div.span12
+        img.img-rounded(data-src="holder.js/840x300")

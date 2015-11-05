@@ -23,6 +23,14 @@ exports.setLocale = function(req, res){
   res.send('ok');
 };
 
+exports.about = function(req, res){
+  checkLocale(req);
+  res.render('about', { title: lang.pageAbout.pageTitle,
+    navMenus : lang.navMenus,
+    pageContent: lang.pageAbout
+  });
+};
+
 exports.solution = function(req, res){
   checkLocale(req);
   res.render('view1', { title: lang.pageSolution.pageTitle,
@@ -42,7 +50,7 @@ exports.support = function(req, res){
 exports.career = function(req, res){
   checkLocale(req);
   var jobId = req.param('id');
-  res.render('view2', { title: lang.pageCareer.pageTitle,
+  res.render('career', { title: lang.pageCareer.pageTitle,
     navMenus : lang.navMenus,
     jobId: jobId,
     pageContent: lang.pageCareer
@@ -51,7 +59,7 @@ exports.career = function(req, res){
 
 exports.contact = function(req, res){
   checkLocale(req);
-  res.render('view3', { title: lang.pageContact.pageTitle,
+  res.render('contact', { title: lang.pageContact.pageTitle,
     navMenus : lang.navMenus,
     headline: lang.pageContact.headline,
     sites: lang.pageContact.sites,
@@ -62,21 +70,23 @@ exports.contact = function(req, res){
 exports.product = function(req, res){
   var pageView, pageVar;
   switch(req.params.sub) {
-    case "iphone":
-      pageView = 'service-iphone';
-      pageVar = lang.pageService.iphone;
+    case "ecom":
+      pageView = 'product-ecom';
+      pageVar = lang.pageProduct.ecom;
       break;
-    case "mobile":
-      pageView = 'view1';
-      pageVar = lang.pageService.mobile;
+    case "eedu":
+      pageView = 'product-eedu';
+      pageVar = lang.pageProduct.eedu;
       break;
-    case "web":
-      pageView = 'view1';
-      pageVar = lang.pageService.web;
+    case "oa":
+      pageView = 'product-oa';
+      pageVar = lang.pageProduct.oa;
+      break;
+    case "crm":
+      pageView = 'product-crm';
+      pageVar = lang.pageProduct.crm;
       break;
     default:
-      pageView = 'view1';
-      pageVar = lang.pageService.web;
   }
   checkLocale(req);
   res.render(pageView, { title: pageVar.pageTitle,
@@ -88,21 +98,23 @@ exports.product = function(req, res){
 exports.service = function(req, res){
   var pageView, pageVar;
   switch(req.params.sub) {
-    case "iphone":
-      pageView = 'service-iphone';
-      pageVar = lang.pageService.iphone;
-      break;
-    case "mobile":
+    case "customize":
       pageView = 'view1';
-      pageVar = lang.pageService.mobile;
+      pageVar = lang.pageService.customize;
       break;
-    case "web":
+    case "sitebuild":
       pageView = 'view1';
-      pageVar = lang.pageService.web;
+      pageVar = lang.pageService.sitebuild;
+      break;
+    case "appdev":
+      pageView = 'service-appdev';
+      pageVar = lang.pageService.appdev;
+      break;
+    case "wechatsale":
+      pageView = 'service-wechatsale';
+      pageVar = lang.pageService.wechatsale;
       break;
     default:
-      pageView = 'view1';
-      pageVar = lang.pageService.web;
   }
   checkLocale(req);
   res.render(pageView, { title: pageVar.pageTitle,

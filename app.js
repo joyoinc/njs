@@ -35,6 +35,7 @@ app.configure('production', function(){
 
 app.get('/', routes.index);
 app.post('/', routes.setLocale);
+app.get('/about', routes.about);
 app.get('/product/:sub', routes.product);
 app.get('/service/:sub', routes.service);
 app.get('/solution', routes.solution);

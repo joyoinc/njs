@@ -7,7 +7,7 @@ block content
     div.row
       div.span12
         //img.img-rounded(data-src="holder.js/940x300")
-        img.img-rounded(src="/img/joyo-home.jpg")
+        img.img-rounded(src="/img/superint-home.jpg")
     div.container-fluid
       div.row-fluid
         div.class.span4
@@ -16,7 +16,7 @@ block content
             each job,i in pageContent.jobs
               li: a(href="/career/#{i}")= job.title
           h4.text-warning= pageContent.label4
-          small admin@joyoedu.net
+          small hr@superint.us
         div.class.span8
           h3.text-info= pageContent.jobs[jobId].title
           strong= pageContent.label2

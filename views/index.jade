@@ -7,7 +7,7 @@ block content
     div.row
       div.span12
         //img.img-rounded(data-src="holder.js/940x300")
-        img.img-rounded(src="/img/joyo-home.jpg")
+        img.img-rounded(src="/img/superint-home.jpg")
     div.btn-group
       button.btn.locale(locale='ch') 中文
       button.btn.locale(locale='en') English
@@ -18,7 +18,97 @@ block content
         })
       })
 
-    paragraph = {headline:pageContent.headline, lines:pageContent.paragraphs}
-    h4.muted= pageContent.line0
-    include paragraph
-    strong= pageContent.line1
+    h3.text-info= pageContent.line0
+    ul.thumbnails(style="margin-top:10px;")
+      li.span3
+        a.thumbnail
+          img(src="/img/business-0.jpg", style="height:135px;")
+        div.thumbnail(style="height: 150px;")
+          h4.text-info= pageContent.business[0].title
+          p= pageContent.business[0].desc
+      li.span3
+        a.thumbnail
+          img(src="/img/business-1.jpg", style="height:135px;")
+        div.thumbnail(style="height: 150px;")
+          h4.text-info= pageContent.business[1].title
+          p= pageContent.business[1].desc
+      li.span3
+        a.thumbnail
+          img(src="/img/business-2.jpg", style="height:135px;")
+        div.thumbnail(style="height: 150px;")
+          h4.text-info= pageContent.business[2].title
+          p= pageContent.business[2].desc
+      li.span3
+        a.thumbnail
+          img(src="/img/business-3.jpg", style="height:135px;")
+        div.thumbnail(style="height: 150px;")
+          h4.text-info= pageContent.business[3].title
+          p= pageContent.business[3].desc
+          
+    h3.text-info= pageContent.line1
+    ul.thumbnails(style="margin-top:10px;")
+      li.span3
+        a.thumbnail
+          img(src="/img/hotcustom-0.jpg", style="height:135px;")
+        div.thumbnail(style="height: 50px;")
+          h4.text-info= pageContent.hotcustom[0].title
+          
+      li.span3
+        a.thumbnail
+          img(src="/img/hotcustom-1.jpg", style="height:135px;")
+        div.thumbnail(style="height: 50px;")
+          h4.text-info= pageContent.hotcustom[1].title
+          
+      li.span3
+        a.thumbnail
+          img(src="/img/hotcustom-2.jpg", style="height:135px;")
+        div.thumbnail(style="height: 50px;")
+          h4.text-info= pageContent.hotcustom[2].title
+
+      li.span3
+        a.thumbnail
+          img(src="/img/hotcustom-3.jpg", style="height:135px;")
+        div.thumbnail(style="height: 50px;")
+          h4.text-info= pageContent.hotcustom[3].title
+          
+         
+    h3.text-info= pageContent.line2
+    ul.thumbnails(style="margin-top:10px;")
+      li.span2
+        a.thumbnail
+          img(src="/img/logo-wellsfargo.gif", style="height:100px;")
+          
+      li.span4
+        a.thumbnail
+          img(src="/img/logo-tti.png", style="height:100px;")
+      
+      li.span2
+        a.thumbnail
+          img(src="/img/logo-helen.jpg", style="height:100px;")
+          
+      li.span4
+        a.thumbnail
+          img(src="/img/logo-detica.jpg", style="height:100px;")
+          
+      li.span2
+        a.thumbnail
+          img(src="/img/logo-jetblue.png", style="height:100px;")
+
+      li.span2
+        a.thumbnail
+          img(src="/img/logo-tonghua.jpg", style="height:100px;")
+          
+      li.span2
+        a.thumbnail
+          img(src="/img/logo-chaoshang.jpg", style="height:100px;")
+          
+      li.span2
+        a.thumbnail
+          img(src="/img/logo-qingyi.png", style="height:100px;")
+          
+      li.span4
+        a.thumbnail
+          img(src="/img/logo-viva.jpg", style="height:100px;")
+          
+         
+          

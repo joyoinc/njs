@@ -2,33 +2,62 @@ exports.labels = {
 };
 
 exports.navMenus = {
-  menuHome : "Home",
-  menuProd : ["产品服务" , 
-    ["ALM 产品研发管理","DevSuite", "PPM", "DevSpec", "DevPlan", "DevTrack", "DevTest", "DevTime", "KnowledgeWise" ],
-    ["ITSM IT服务管理", "ServiceWise", "AssetWise", "ProjectPlan", "KnowledgeWise", "FormWise", "DownloadPlus"] ,
-    ["CRM 客户关系管理", "CustomerWise", "MarketingWise", "SalesWise", "AssetWise", "DownloadPlus", "FormWise"] ],
-  menuServ : ["Service" , "iPhone App" , "Mobile App" , "Web App" ],
-  menuSolu : "Solution",
-  menuSupp : "Support",
+  menuHome : "首页",
+  menuAbout : "关于我们",
+  menuProd : ["热门定制" , 
+    ["电商平台","电子商城" ],
+    ["在线教育平台", "在线教育"] ,
+    ["协同办公系统（OA）", "协同办公系统"] ,
+    ["客户管理系统（CRM）", "CRM"] ,
+    ],
+  menuServ : ["公司业务" , "软件定制" , "网站设计" , "APP开发" , "微信营销" ],
+  menuSolu : "解决方案",
+  menuSupp : "技术支持",
   menuCarr : "诚聘英才",
-  menuCtac : "Contact Us"
+  menuCtac : "联系我们"
 };
 
 exports.pageIndex = {
-  pageTitle: '清新博远智能信息科技有限公司',
-  line0: '一流的专业软件外包企业。专业的软件开发人才，高品质的服务态度。',
-  line1: '行胜于言，清华人永远的承诺！',
-  headline: '关于我们',
-  paragraphs: [
-    "清新博远智能信息科技有限公司(Qingxinboyuan Technology CO. LTD.)是一家专业致力于软件外包，系统集成，软件开发设计的高科技企业。",
-    "公司以技术服务为核心业务，以独特灵活的业务流程设计为主导，深入各项行业为核心的研发模式，完美契合企业需求，有效的帮助企业明确需求，高效率、高质量、低成本的开发和维护软件系统。",
-    "清新博远凝聚着一批清华的高科技人才。公司创始人王超毕业于清华大学，曾于美国进修，并在美国获得国际最先进流程管理体系6sigma最高级别--黑带认证。其领衔的流程主导的软件开发体系，立足于解决流程中最核心的业务逻辑，可以有效引导企业明确其核心需求，以最合理的价格，开发出最贴心的产品节约。此外，公司其他开发人员均毕业于清华大学，拥有十几年软件架构，开发，以及系统集成的丰富经验。",
-    "清新博远本着“锐意创新、精益求精”的开发思想，遵循社会效益与经济效益并重的企业原则，在发展中一直采取“以市场为导向、以客户为中心”的柔性开发模式，并在与客户的至诚合作过程中逐渐形成了一套集研发、销售、服务于一体的高效运行机制。自开始从事软件外包业务以来，服务合作模式从人力资源外包发展到项目外包、离岸开发和OEM产品合作等模式。业务领域延伸到电信业，金融业，制造业等诸多领域。并致力于同客户建立长期的软件外包合作关系，同时立足国内市场，不断拓展欧美市场。",
-    "2011年，清新博远于美国VIVA transcription 达成合作协议，开发并维护其几百万用户的病例管理系统。2012年，公司相继与美国Wells Fargo（富国银行），Detica，Aedi Med ， JOYO Tech等公司进行合作，对其工作流程进行了深入的分析，并帮助其改进流程，完善或重建其智能化办公云平台。",
-    "公司始终将坚持以优质的产品、完善的服务以及良好的信誉与海内外各界朋友合作并求共同发展。",
-    "一流的资源和经验积累、一流的管理、一流的技术和专业的服务是我们能够针对不同客户的需求提供用户满意的产品和服务的根本保障，同时这是清新博远快速发展的根源。",
-    "我们相信，通过提供专业的,高质量的软件外包服务,不断提高服务能力和服务水平, 我们会成为您最为信赖的合作伙伴。"
+  pageTitle: '江苏超智略软件科技有限公司',
+  line0: '公司业务',
+  line1: '热门定制',
+  line2: '金牌客户',
+  business: [ 
+    {title:'软件定制', desc: '量身定做方可完美契合，合适的系统才能不成为摆设和累赘！系统定制，只选对的，不选贵的!'} ,
+    {title:'网站建设', desc: '个性化、针对性的网站设计，让您的网站脱颖而出，大幅提高企业形象。专业SEO优化设计，帮您打造点击量的神话!'} ,
+    {title:'APP开发', desc: '完美的设计基于完美的用户体验，安卓、苹果、windows phone APP开发，保证多平台用户始终如一的舒适体验。'} ,
+    {title:'微信营销', desc: '公众平台、微商、微网，让企业玩转微信，备受关注，引领潮流！'} 
+  ] ,
+  hotcustom: [
+    {title:'电商平台'} ,
+    {title:'在线教育平台'} ,
+    {title:'协同办公系统（OA）'} ,
+    {title:'客户管理系统（CRM）'}
   ]
+};
+
+exports.pageAbout = {
+  pageTitle: '江苏超智略软件科技有限公司',
+  line0: '关于我们',
+  line1: '江苏超智略软件科技有限公司(Super-Intelligence CO. LTD.)是一家专业致力于软件定制，网站建设，APP开发的高科技企业。',
+  word: '软件定制，网站建设，APP开发',
+  paragraph1: {
+      title: '我们从哪里来？',
+      lines: [
+        '超智略的几位创始人都毕业于清华大学，70、80、90后的他们精诚合作，用70后的经验80后的个性、90后的创新为用户带来了全新的体验和全程的陪伴。',
+        '随着公司的发展壮大，超智略聚集了更多中美的优秀人才，他们毕业于世界名校，有着google、Microsoft等大公司多年的高级技术开发或管理经验，也为公司带来了国际最前沿的知识，积累了更多无形的财富。',
+      ]
+  },
+  paragraph2: {
+      title: '为什么我们最专业？',
+      lines: [
+        '我们不仅只是IT专家，我们有来自各行业的精英专家，我们从来都只将技术作为服务的工具。',
+        '超智略永远关注企业最本质的需求，永远以用户体验为先导，以公司实际的业务流程为基础。我们拒绝华而不实的炫技产品，我们的产品永远保证100%的落地实施成功率！',
+        '为了更好的深入行业，服务用户，我们邀请到医疗界、教育界、制造业、银行业等各行业资深专家加入我们的顾问团队，为相应领域的客户提供更实用的解决方案。我们有国际流程管理体系6sigma黑带专家坐镇项目、规范流程。'
+      ]
+  },
+  ad0: '软件定制，不选贵的，只选对的!',
+  ad1: '超智略精诚期待与您合作！'
 };
 
 exports.pageSolution = {
@@ -61,33 +90,104 @@ exports.pageSupport = {
   ]
 };
 
+exports.pageProduct = {
+    ecom: {
+        pageTitle: '电子商城',  
+        headline: '电子商城',
+        lines : [   '经历了多年市场运营的磨砺，通过我们在家电、数码、医药、服饰、音像、家居、零售百货等电子商务领域不断探索研究与实践，逐渐积累了各个行业大量的运营模式与经营思想，并获得了非常丰富的成功经验，最终沉淀形成了一套专门面向电子商务策划流程，为众多客户提供企业级电子商城系统解决方案的软件产品。 软件系统面向网络环境架构，为客户业务系统的长远可持续发展奠定坚实基础。我们的产品在众多行业都有了成功应用。',
+                    '多层技术架构',
+                    '超智略采用分层提供服务支持的设计思想，将系统划分为数据库层、基础服务层、业务表现层和系统接口层。系统对每一层定义明确的功能接口，同时在层次内实现组件化的接口实现。层次化、模块组件化的实现，使系统具备了最大程度的灵活度，从而能对业务需求的变化作出快速的反应，使系统具有很好的扩展性。',
+                    '安全性、可靠性、先进性原则',
+                    '安全性与可靠性原则：',
+                    '考虑到电子商务系统工程建设项目安全性、可靠性的需求，在系统设计中，应充分注意系统的安全性和可靠性，采用多种安全防范技术和措施，保障系统的信息安全，保障系统长期稳定可靠运行，同时在系统设计要充分考虑系统运行性能，达到“简便、实用、快捷、安全、准确”的目的。',
+                    '先进性原则：',
+                    '由于IT技术发展的速度惊人。因此，在电子商务项目进行系统总体规划时，我们选择业界到目前为止先进和成熟的技术作为整个系统的技术架构，以保证系统有不断发展和扩充的余地。',
+                    '定制个性化原则',
+                    '由于不同行业，不同企业对其商城有着不同的特殊需求，再考虑到安全性等共性问题的基础上，超智略通过数据结构、存储过程等，为企业提供适合、高效、安全的解决方案。' ]
+    },
+    eedu: {
+        pageTitle: '在线教育',  
+        headline: '在线教育',
+        lines : [   '随着IT技术的发展，在线教育的普及，教育方式的多元化发展已在不知不觉中来到我们的身边。小到私人教师，大到著名院校，在线教育都成为其线下教育不可或缺的补充内容。 软件系统面向网络环境架构，为客户业务系统的长远可持续发展奠定坚实基础。我们的产品在众多行业都有了成功应用。',
+                    '根据客户需求不同，功能需求也多有不同。比如，个人钢琴教师只需要在线排课系统，而学校和教育机构则需要一整套完整的在线教育软件。现阶段热门定制的功能如下：',
+                    '网校学习系统',
+                    '为客户搭建现代化网络体系，定制化的教育教学模板，充分迎合当下O2O商业开展模式，轻松满足学生的在线学习需求，助力线下市场迅速拓展。',
+                    '在线考试系统',
+                    '轻松管理考试的每一个环节，从出题检验，到答题检测，系统化的在线考试方法，全面检测学生学习效果，针对考试结果进行教育辅助，更有利于提升教学效果。',
+                    '线下排课系统',
+                    '解除排课难题，多角色支持学生、老师、教务、家长全员参与其中，多渠道沟通模式，短信、微信降低沟通成本，教学安排更有效率，教学体验更直接、更给力。',
+                    '在线教育社区系统',
+                    '小组功能、同学问答功能、微博功能、博客功能、关注加好友功能、消息功能等。' ]
+    },
+    crm: {
+        pageTitle: 'CRM',  
+        headline: 'CRM',
+        lines : [   '客户关系管理是一个辨识、获取、保持和增加获利客户的方法和过程。它整合了企业中的各种资源诸如客户、伙伴、服务、知识，并对资源有效的、结构化的进行分配和重组，便于在整个客户生命周期内及时了解、使用有关资源和知识。它优化并简化企业的各项业务流程，使企业在工作中把注意力集中到改善客户关系、提升绩效等核心业务方面，提升企业的反应能力和反馈能力。 软件系统面向网络环境架构，为客户业务系统的长远可持续发展奠定坚实基础。我们的产品在众多行业都有了成功应用。',
+                    '超智略立足于CRM核心作用，秉承一贯的用户体验优先的设计方案，用最简单易用的系统，实现最强大的功能。同时尊重企业的个性化需求，切实解决企业难题。' ],
+        tiles : [
+            {   title:'了解客户   留住客户', desc:'获取客户的深入需求是留住客户的关键。亿客CRM帮助销售人员完整记录客户信息，了解客户的喜好，通过针对性的营销策略，搞定他们、留住他们。客户跟进过程中所有的沟通细节都同步云端，永久保存，销售人员离职也不用担心。' },
+            {   title:'销售动态   随时掌握', desc:'亿客CRM将销售人员每天跟进的客户、执行的任务都一 一展现出来。详细记录从销售线索、客户、业务机会、合同、费用到回款的全流程，以最直观的方式跟踪整个销售过程，让所有销售动态一览无遗，尽在掌握。' },
+            {   title:'精准营销   快速成单', desc:'销售业绩的提升需要更加精准地营销和更加快速地成单。亿客CRM在众多潜在客户里，针对性地将目标客户筛选出来，并通过销售流程化，让新人能够更快地复制销售经验，成为销售中的高手。' },
+            {   title:'移动办公   便捷高效', desc:'不能及时处理销售问题是一件令人头疼的事情。亿客CRM在移动办公上下足了功夫，无论你在哪，在做什么，都可以随时处理销售事宜。' },
+        ]
+    },
+    oa: {
+        pageTitle: 'CRM',  
+        headline: 'CRM',
+        lines : [   '超智略深入了解客户需求，针对每家用户开发一套以人为中心，围绕着人找人、人找事、人找资源的应用设计理念而开发的简洁、易用、实用的综合性、开放性、平台型的协同管理系统。降低信息化落实难度，提高企业工作效率。',
+                    '整个系统遵循着科学的协同概念“一个中心、两个基本点、三条纽带、四个管理目标”即以人为中心；以事件、资源为基本点；以沟通、协作、共享为纽带；以诉求、参与人、过程、结果为管理目标；处理人与人、人与事件、人与资源之间的关系。',
+                    '目前为止，大多企业客户采取以下架构设计，保证系统跨平台、跨数据库使用。' ],
+    },
+};
+
 exports.pageService = {
-  iphone: {
-    pageTitle: 'Service/iPhone App',
-    headline: 'IPHONE APP DEVELOPMENT',
+  customize: {
+    pageTitle: '软件定制',
+    headline: '只选对的，不选贵的',
     paragraphs: [
-    "Smartphones and communication has become an integral part of our society as the computing industry is going through a transformation phase and becoming more mobile. People are accessing way more content as compared to few years ago due to the inheritance of smartphones in their lives. There are also a number of smartphones platforms that have come up during this period. With Apple's iOS, Google's Android, Windows Mobile and RIM's Blackberry OS trying to capture the market share, it is all dependent upon the developers to create content rich application and support any platform.",
-    "There are millions of apps combined in all four marketplaces. Smartphones are not just a mode of communication anymore, but have also become a quotient for entertainment and productivity. Our developers at A-1 Technology have strong expertise and versatility in providing custom mobile application development. The rapidly growing mobile space demands rendering innovation for converting theoretical expectations into reality. We have a long experience in developing ground breaking ideas on the various platforms like Android, Blackberry, Windows Mobile and iPhone/iPad.",
-    "Our dedicated team of programmers, follow formulated steps in application development which includes the SDK Study, UI & Prototype Design and Development, feasibility study along with testing. For any application development process to be successful, it is necessary to have innovative thinking and in-depth technological knowledge. We understand that concept, which is why happy a long list of happy clients worldwide."
+    "随着社会的信息化，企业客户对软件的依赖性与要求越来越高，但现有的软件很难完全匹配客户需求，定制化软件应运而生。而企业的烦恼并没有因此解决，针对同一个项目，市面报价参差不齐，软件质量良莠不齐，企业往往因此一头雾水；要么是瞎子摸象般的做预算，要么是疑心重重的挑剔供应商，更有甚者，索性寻找免费的午餐：破解版或者免费版，导致最后实施过程困难重重，扩展更新无从下手，费时费力却只能以失败告终！",
+    "俗话说：“鞋子适不适合，自己穿着就知道”。对于专业的软件定制商，首先要充分了解客户当前需求及后续发展需要，为其慎重选型。选型过程中，不但要考虑适合的技术路线，也需要充分考虑企业预算及企业文化等。一款良好的定制软件，可以伴随企业成长，不断升级扩展，成为企业不可或缺的助手和伙伴。",
+    "超值略秉承”立足企业需要，伴随企业成长”的服务理念，多年来为中美多家企业提供了经济实用的定制软件，并成功与几乎所有客户达成了长期合作关系。在伴随企业信息化平稳发展的过程中，实现了自我的不断成长与突破。"    
     ]
   },
-  mobile: {
-    pageTitle: 'Service/Mobile App',
-    headline: 'Mobile APP DEVELOPMENT',
+  sitebuild: {
+    pageTitle: '网站设计',
+    headline: '点击量的神话，让您的品牌家喻户晓！',
     paragraphs: [
-    "Smartphones and communication has become an integral part of our society as the computing industry is going through a transformation phase and becoming more mobile. People are accessing way more content as compared to few years ago due to the inheritance of smartphones in their lives. There are also a number of smartphones platforms that have come up during this period. With Apple's iOS, Google's Android, Windows Mobile and RIM's Blackberry OS trying to capture the market share, it is all dependent upon the developers to create content rich application and support any platform.",
-    "There are millions of apps combined in all four marketplaces. Smartphones are not just a mode of communication anymore, but have also become a quotient for entertainment and productivity. Our developers at A-1 Technology have strong expertise and versatility in providing custom mobile application development. The rapidly growing mobile space demands rendering innovation for converting theoretical expectations into reality. We have a long experience in developing ground breaking ideas on the various platforms like Android, Blackberry, Windows Mobile and iPhone/iPad.",
-    "Our dedicated team of programmers, follow formulated steps in application development which includes the SDK Study, UI & Prototype Design and Development, feasibility study along with testing. For any application development process to be successful, it is necessary to have innovative thinking and in-depth technological knowledge. We understand that concept, which is why happy a long list of happy clients worldwide."
+    "互联网的时代，点击量为王! 随着线上用户的逐步普及，网站建设成为了品牌营销的重要手段。让人耳目一新的网站设计可以帮助企业以最低的成本，迅速崛起成为神话；功能完善的网站平台，可以大量聚集线上用户，为企业提高营销效率，带来丰厚的利润。",
+    "超智略始终以艺术家的方式为您打造个性化的网站，以提高品牌效益为主导，以完美的用户体验为目标。而不是简单的套用模板，东拼西凑，或者舍本逐末炫耀技术，而忽略网站作为企业线上门户的职能与目的。",
+    "我们聚集了中美大批专业的人才，采用最先进的架构与技术，保证艺术与技术齐头并进，相辅相成。"
     ]
   },
-  web: {
-    pageTitle: 'Service/Web Application',
-    headline: 'Web Application DEVELOPMENT',
+  appdev: {
+    pageTitle: 'APP开发',
+    headline: 'APP开发',
     paragraphs: [
-    "Smartphones and communication has become an integral part of our society as the computing industry is going through a transformation phase and becoming more mobile. People are accessing way more content as compared to few years ago due to the inheritance of smartphones in their lives. There are also a number of smartphones platforms that have come up during this period. With Apple's iOS, Google's Android, Windows Mobile and RIM's Blackberry OS trying to capture the market share, it is all dependent upon the developers to create content rich application and support any platform.",
-    "There are millions of apps combined in all four marketplaces. Smartphones are not just a mode of communication anymore, but have also become a quotient for entertainment and productivity. Our developers at A-1 Technology have strong expertise and versatility in providing custom mobile application development. The rapidly growing mobile space demands rendering innovation for converting theoretical expectations into reality. We have a long experience in developing ground breaking ideas on the various platforms like Android, Blackberry, Windows Mobile and iPhone/iPad.",
-    "Our dedicated team of programmers, follow formulated steps in application development which includes the SDK Study, UI & Prototype Design and Development, feasibility study along with testing. For any application development process to be successful, it is necessary to have innovative thinking and in-depth technological knowledge. We understand that concept, which is why happy a long list of happy clients worldwide."
-    ]
+    "随着智能手机的普及，越来越多的企业意识到移动信息化所带来的丰厚价值，并开始将移动应用引入到企业的各个工作环节之中。",
+    "超智略将PC、手机、平板电脑通过互联网进行无缝连接，相辅相成，为企业提供360度数字化解决方案"
+    ],
+    dev0: 'APP开发主要包括：',
+    devs : [ '苹果APP开发', 'Android手机开发', 'Windows phone开发' ]
+  },
+  wechatsale : {
+    pageTitle: '微信营销',  
+    headline: '微信营销',
+    line0: '超智略根据腾讯微信提供的企业二次开发接口，为客户开启了微信公众号第三方应用功能开发。我们的专业技术团队致力于为企业量身定制微信开发功能，以解决客户移动互联网应用的实际需求。',
+    item0: '包含项目：',
+    items0: [   '会员管理功能（与线下和网站会员打通）；',
+                '投诉受理功能（语音与文字交互）；',
+                '管理订单功能（取消与更改）；',
+                '互动游戏（大转盘、刮刮卡等）；',
+                '活动的发布与管理功能（优惠券）；' ],
+    line1:  '微网站开发业务介绍',
+    line2:  '2014年移动互联网的发展势头强劲，随着以微信为代表的O2O营销时代的到来了，微网站（微商城、微官网）顺应时代潮流应运而生。微网站采用HTML5+CSS3技术，适用于多种移动终端，是只属于移动互联网的电子商务平台。微商城以微信为媒介，是针对微信量身定制的手机商城网站，数亿微信用户在与企业点对点亲密互动的同时，实现了完美便捷的移动购物体验。微官网，将企业微网站植入微信公众平台，企业文化、品牌形象、产品信息、用户服务等集于一体，适应移动终端的浏览体验与交互性能的新一代网站。',
+    item1: '包含项目：',
+    items1: [   '微网站建设',
+                '微信网站建设',
+                '微商城建设',
+                '微信商城建设',
+                '微信订阅号开发',
+                '微信服务号开发']
   }
 };
 

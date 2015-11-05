@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  div.container
+    h1.muted= title
+    include navbar
+    
+    p.small.text-justify= pageContent.lines[0]
+    
+    p.small.text-justify= pageContent.lines[1]
+    
+    ul.thumbnails(style="margin-top:10px;")
+      li.span6
+        div.thumbnail(style="height: 150px;")
+          h4.text-info.text-center= pageContent.tiles[0].title
+          p= pageContent.tiles[0].desc
+          
+      li.span6
+        div.thumbnail(style="height: 150px;")
+          h4.text-info.text-center= pageContent.tiles[1].title
+          p= pageContent.tiles[1].desc
+
+      li.span6
+        div.thumbnail(style="height: 150px;")
+          h4.text-info.text-center= pageContent.tiles[2].title
+          p= pageContent.tiles[2].desc
+          
+      li.span6
+        div.thumbnail(style="height: 150px;")
+          h4.text-info.text-center= pageContent.tiles[3].title
+          p= pageContent.tiles[3].desc
