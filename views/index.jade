@@ -7,9 +7,9 @@ block content
       div.span12
         //img.img-rounded(data-src="holder.js/940x300")
         img.img-rounded(src="/img/superint-home.jpg")
-    //div.btn-group
-    //  button.btn.locale(locale='ch') 中文
-    //  button.btn.locale(locale='en') English
+    div.btn-group
+      button.btn.locale(locale='ch') 中文
+      button.btn.locale(locale='en') English
     script
       $('.locale').click(function(){
       $.post('/', {locale: $(this).attr('locale')}, function(){

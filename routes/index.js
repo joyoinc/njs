@@ -61,9 +61,7 @@ exports.contact = function(req, res){
   checkLocale(req);
   res.render('contact', { title: lang.pageContact.pageTitle,
     navMenus : lang.navMenus,
-    headline: lang.pageContact.headline,
-    sites: lang.pageContact.sites,
-    labels: lang.pageContact.labels
+    pageContent: lang.pageContact
   });
 };
 

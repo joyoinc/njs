@@ -195,17 +195,16 @@ exports.pageContact = {
   pageTitle: '联系我们',
   headline: '联系我们',
   labels: {
-    yourName: 'Your Name',
-    yourPhone: 'Your Phone',
-    yourEmail: 'Your Email',
-    contactMe: 'Contact Me',
-    ourContactInfo: 'Our Contact Info'
+    hr: '人力',
+    customerRep: '客服',
+    sales: '销售',
+    email: '邮箱',
+    others: '其他',
+    address: '地址',
+    phone: '电话',
+    wechatName: '微信号'
   },
-  sites: [
-    {city: 'New York' , street: '115 Broadway, 13th Floor', cityStateZip: 'New York, NY, 10006', phone: '212-397-7481'},
-    {city: 'Raleigh' , street: '3999 Wedonia Dr. Apt# 138', cityStateZip: 'Raleigh, NC, 27006', phone: '919-392-1381'},
-    {city: 'Beijing' , street: '155 XXX Road, Apt# 555', cityStateZip: 'Bejing, China, 100086', phone: '13813811338'}
-  ]
+  address: '江苏省宜兴市屺亭街道荆邑北路109号宜兴创业园D9'
 };
 
 exports.pageCareer = {

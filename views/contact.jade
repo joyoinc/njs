@@ -7,25 +7,25 @@ block content
       div.span12
         //img.img-rounded(data-src="holder.js/940x300")
         img.img-rounded(src="/img/superint-home.jpg")
-    h3.text-info= headline
+    h3.text-info #{pageContent.headline}
     
     div.form-group
-        h4.span3 邮箱：
+        h4.span3 #{pageContent.labels.email} ：
         ul.span9
-            li 销售： sales@superint.us
-            li 客服：cs@superint.us
-            li 人力：hr@superint.us
-            li 其他：info@superint.us
+            li #{pageContent.labels.sales} : sales@superint.us
+            li #{pageContent.labels.customerRep} ： cs@superint.us
+            li #{pageContent.labels.hr} ： hr@superint.us
+            li #{pageContent.labels.others} ： info@superint.us
         
         
     div.form-group
-        h4.span12 微信号： superint
+        h4.span12 #{pageContent.labels.wechatName} ： superint
         
     div.form-group
-        h4.span12 地址：江苏省宜兴市屺亭街道荆邑北路109号宜兴创业园D9
+        h4.span12 #{pageContent.labels.address} ： #{pageContent.address}
 
     div.form-group
-        h4.span12 电话：18918960529
+        h4.span12 #{pageContent.labels.phone} ： 18918960529
         
         
 
